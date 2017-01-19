@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+	TODO:
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Omars Dicer</title>
+    <link href="public/css/foundation.min.css" rel="stylesheet">
+    <link href="public/css/overrides.css" rel="stylesheet">
+</head>
+<body class="background">
+<br>
+<div id="top">
+    <div class="row">
+        <div class="large-10 columns medium-centered">
+            <div class="text-center">
+            <h1 class="title"> "Omar's Dicer" </h1>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="medium-20 columns text-center vertical-center">
+            <span class="inp vertical-center">How many dice would you like to roll?</span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class="medium-20 columns text-center">
+        <input type="range" min="1" max="10" value="1" step="1" id="slider">
+        <span id="numdice" class="slider-text"></span>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="medium-5 columns text-center medium-centered">
+            <span class="inp label vertical-center">How many sides?</span>
+        </div>
+    </div>
+    <br>
+    <div class="row medium-7 columns die-center" id="dieType">
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d4" value="4">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d6" value="6">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d8" value="8">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d10" value="10">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d12" value="12">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d20" value="20">
+        </div>
+        <div class="medium-1 columns ">
+            <input type="radio" name="dieType" id="d100" value="100">
+        </div>
+    </div>
+    <div class="row medium-7 columns medium-centered die-center">
+        <div class="medium-1 columns ">
+            <h5 class="die-type">4</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">6</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">8</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">10</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">12</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">20</h5>
+        </div>
+        <div class="medium-1 columns ">
+            <h5 class="die-type">100</h5>
+        </div>
+        <br><br>
+        </div>
+    <div>
+    <div class="row">
+        <div class="medium-8 columns medium-centered">
+            <div class="success button expanded success-text" id="roll">Click here to roll.</div>
+        </div>
+    </div>
+</div>
+    </div>
+<div id="rollgif" class="row">
+    <div class="medium-8 columns medium-centered text-center">
+    <img class="dice-image" src="public/images/dicerollgif%202.gif" width="600px">
+    </div>
+</div>
+<div id="rollgif2" class="row">
+    <div class="medium-8 columns medium-centered text-center">
+        <img class="dice-image" src="public/images/rolling-dice-gif-3 2.gif" width="250px">
+        <img class="dice-image" src="public/images/rolling-dice-gif-3 2.gif" width="250px">
+    </div>
+</div>
+<div id="rollgif3" class="row">
+    <div class="medium-8 columns medium-centered text-center">
+        <img class="dice-image" src="public/images/golddice1.png" width="100px">
+    </div>
+</div>
+<div id="rollgif4" class="row">
+    <div class="medium-8 columns medium-centered text-center">
+        <img class="dice-image" src="public/images/dice.png" width="600px">
+    </div>
+</div>
+<div id="rollgif5" class="row">
+    <div class="medium-8 columns medium-centered text-center">
+        <img class="dice-image" src="public/images/dice.png" width="600px">
+    </div>
+</div>
+<div id="bottom">
+<div id="results">
+    <div class="row" id="results1">
+        <div class="medium-8 columns medium-centered">
+            <h2 class="inp text-center">Lets see how yah did!</h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row text-center">
+        <div class="medium-5 columns float-left background2 resultBoxLeft">
+            <h5 class="inp text-center" id="indivs">What each dice got you!</h5>
+            <span class="text-center result" id="indivResults"></span>
+        </div>
+        <div class="medium-5 columns float-right background2 resultBoxRight">
+            <h5 class="inp text-center" id="sum">Total</h5>
+            <span class="text-center result" id="sumResults"></span>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+<div class="row">
+<div class="row" id="redo">
+    <div class="medium-8 columns medium-centered">
+        <div class="warning button expanded success-text" id="redobutton">Click here to roll again.</div>
+    </div>
+</div>
+<div class="row" id="newRoll">
+    <div class="medium-8 columns medium-centered">
+        <div class="alert button expanded success-text" id="newRollbutton">Click here to change things up.</div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/javascripts/main.js"></script>
+
+</body>
+</html>

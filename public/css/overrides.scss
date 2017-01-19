@@ -1,0 +1,92 @@
+@import "utility";
+
+h1.title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: gold;
+  font-family: Georgia;
+  font-size: 75px;
+}
+
+h2 {
+  padding-bottom: 0;
+}
+
+#sum{
+  color: gold;
+  font-size: 25px;
+}
+
+.alert {
+  background-color: blueviolet;
+}
+
+.dice-image{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  transform: rotate(0deg);
+}
+
+.label-die-sides {
+  background: transparent;
+  color: white;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.inp{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 28px;
+  background-color: transparent;
+  color: white;
+}
+
+.background {
+  background: teal;
+}
+
+.background2{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.success-text{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.resultBoxLeft{
+  margin-left: 45px;
+}
+
+.resultBoxRight{
+  margin-right: 45px;
+}
+
+.die-type {
+  color: white;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.die-center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 180px;
+}
+
+.slider-text{
+  font-size: 20px;
+  font-family: Georgia;
+  color: white;
+}
+
+.result {
+  font-size: 28px;
+  color: white;
+  font-family: Georgia;
+}
